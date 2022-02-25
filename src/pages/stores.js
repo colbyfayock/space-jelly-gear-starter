@@ -7,7 +7,7 @@ import Button from '@components/Button';
 
 import styles from '@styles/Page.module.scss'
 
-export default function Home({ storeLocations }) {
+export default function Stores() {
   return (
     <Layout>
       <Head>

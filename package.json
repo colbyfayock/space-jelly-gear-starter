@@ -1,6 +1,9 @@
 {
   "name": "demo-space-jelly-gear",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -8,14 +11,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.0.10",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-icons": "^4.3.1",
-    "sass": "^1.49.7"
+    "next": "16.1.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.5.0",
+    "sass": "^1.97.3"
   },
   "devDependencies": {
-    "eslint": "8.9.0",
-    "eslint-config-next": "12.0.10"
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.1.6"
   }
 }

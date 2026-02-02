@@ -1,9 +1,10 @@
 import Link from 'next/link';
-import { FaShoppingCart } from 'react-icons/fa';
-
+import dynamic from 'next/dynamic';
 import Container from '@components/Container';
 
 import styles from './Header.module.scss';
+
+const FaShoppingCart = dynamic(() => import('react-icons/fa').then(mod => mod.FaShoppingCart), { ssr: false });
 
 const Header = () => {
   return (
@@ -32,9 +33,9 @@ const Header = () => {
           </li>
         </ul>
         <p className={styles.headerCart}>
-          <button>
-            <FaShoppingCart />
-            <span>
+          <button suppressHydrationWarning>
+            <span suppressHydrationWarning><FaShoppingCart /></span>
+            <span suppressHydrationWarning>
               $0.00
             </span>
           </button>
@@ -42,7 +43,7 @@ const Header = () => {
         <ul className={styles.headerLocales}>
           <li>
             <Link href="#">
-              <a>
+              <a suppressHydrationWarning>
                 ES
               </a>
             </Link>

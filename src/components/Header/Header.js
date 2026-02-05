@@ -33,9 +33,9 @@ const Header = () => {
           </li>
         </ul>
         <p className={styles.headerCart}>
-          <button suppressHydrationWarning>
-            <span suppressHydrationWarning><FaShoppingCart /></span>
-            <span suppressHydrationWarning>
+          <button>
+            <FaShoppingCart />
+            <span>
               $0.00
             </span>
           </button>
@@ -43,7 +43,7 @@ const Header = () => {
         <ul className={styles.headerLocales}>
           <li>
             <Link href="#">
-              <a suppressHydrationWarning>
+              <a>
                 ES
               </a>
             </Link>
